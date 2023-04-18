@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="br.ucsal.medicaapp.ui.home.HomeFragment"
+        android:name="br.ucsal.medicaapp.ui.listMed.ListMedFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_list_med" />
 
     <fragment
         android:id="@+id/navigation_dashboard"

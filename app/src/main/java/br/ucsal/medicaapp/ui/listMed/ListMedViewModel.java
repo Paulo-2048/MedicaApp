@@ -1,16 +1,16 @@
-package br.ucsal.medicaapp.ui.home;
+package br.ucsal.medicaapp.ui.listMed;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class ListMedViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public ListMedViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue("This is list fragment");
     }
 
     public LiveData<String> getText() {
