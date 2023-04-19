@@ -41,6 +41,38 @@
         android:textIsSelectable="false"
         android:textSize="16sp" />
 
+    <RadioGroup
+        android:id="@+id/listMedItem_radioGroup_frequencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/daily_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Diária" />
+
+        <RadioButton
+            android:id="@+id/weekly_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Semanal" />
+
+        <RadioButton
+            android:id="@+id/monthly_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mensal" />
+
+    </RadioGroup>
+
+
     <LinearLayout
         android:id="@+id/layout_times"
         android:layout_width="match_parent"
@@ -51,7 +83,32 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/list_med_item_button_btn_taken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingerir"
+            android:textColor="#FFFFFF"
+            app:iconTint="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/list_med_item_textView_taken"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:gravity="center_vertical"
+            android:text="Não Tomado"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginTop="16dp">
 
 
@@ -71,7 +128,6 @@
             android:layout_marginStart="16dp"
             android:checked="true"
             android:clickable="false"
-            android:editable="false"
             android:minHeight="48dp"
             android:text="Lembrete" />
 

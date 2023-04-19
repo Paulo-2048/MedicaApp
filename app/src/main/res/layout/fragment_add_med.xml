@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.addMed.AddMedFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/frag_addMed_textInputView_medName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Nome do medicamento">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/frag_addMed_editText_medName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/frag_addMed_textInputView_medDose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Dose do medicamento">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/frag_addMed_editText_medDose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/frag_addMed_textInputView_medFreqQTD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Quantidade de doses">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/frag_addMed_editText_medFreqQTD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Frequência"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <RadioGroup
+        android:id="@+id/frag_addMed_radioGroup_freq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/frag_addMed_radioButton_freqDaily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Diário" />
+
+        <RadioButton
+            android:id="@+id/frag_addMed_radioButton_freqWeekly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Semanal" />
+
+        <RadioButton
+            android:id="@+id/frag_addMed_radioButton_freqMonthly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mensal" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/frag_addMed_textView_horariosAdicionados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Horários Adicionados:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:paddingHorizontal="4dp">
+
+        <LinearLayout
+            android:id="@+id/frag_addMed_linearLayout_horariosAdicionados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/frag_addMed_textInputView_addHorario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Horário">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/frag_addMed_editText_addHorario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/frag_addMed_button_adicionarHorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Adicionar Novo Horário" />
+
+    <Switch
+        android:id="@+id/frag_addMed_switch_reminderActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ativar Lembrete" />
+
+    <Button
+        android:id="@+id/frag_addMed_button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar" />
+
+</LinearLayout>

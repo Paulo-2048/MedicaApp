@@ -1,8 +1,10 @@
-package br.ucsal.medicaapp;
+package br.ucsal.medicaapp.ui.listMed;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import br.ucsal.medicaapp.R;
 
 public class ListMedItem extends AppCompatActivity {
 
