@@ -14,5 +14,11 @@ O usuário pode editar as informações de um medicamento já cadastrado, inclui
 4. Configurar lembretes personalizados
 O usuário pode configurar lembretes personalizados para medicamentos específicos, definindo um horário específico para receber um lembrete para tomar o medicamento.
 
+
+## Limitações Conhecidas
+* Quando um medicamento é adicionado, não é possível alterar a quantidade de horários em que deve ser tomado.
+* Por ser utilizado a funcionalidade de Theread, o agendamento de lembretes só funciona se  aplicativ estiver rodand, pelo menos em segunda plano.
+* Editar e remover lembretes, apenas tem um efeito visual.
+
 ## Considerações Finais
 O MedicaApp é um aplicativo simples e eficiente que ajuda o usuário a se lembrar de tomar seus medicamentos de maneira organizada. Com sua interface intuitiva e suas funcionalidades práticas, o aplicativo torna a rotina do usuário mais fácil e segura.
