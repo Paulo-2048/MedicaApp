@@ -67,7 +67,6 @@ public class ListMedReminderFragment extends Fragment {
         calendarNotificationTime.set(Calendar.SECOND, 0);
 
         NotificationAction.scheduleNotification(getContext(), medName, calendarNotificationTime);
-        NotificationAction.shootNotification(getContext(), medName, medMessage);
     }
 
     private void AddTimeInformations(View root) {
