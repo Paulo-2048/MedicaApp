@@ -156,6 +156,10 @@ public class ListMedReminderFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
+
+        listMedicamentos = null;
+        listMedReminder = null;
+
         binding = null;
     }
 }

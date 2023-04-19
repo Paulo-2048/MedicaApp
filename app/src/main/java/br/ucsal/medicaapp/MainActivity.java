@@ -46,11 +46,11 @@ public class MainActivity extends AppCompatActivity {
 
         // Criando a lista de funcionalidades
         ArrayList<String> funcionalidades = new ArrayList<String>();
-        funcionalidades.add("Agendar consultas");
-        funcionalidades.add("Consultar histórico médico");
-        funcionalidades.add("Acompanhar resultados de exames");
+        funcionalidades.add("Listar Medicamentos");
+        funcionalidades.add("Editar Medicamentos");
+        funcionalidades.add("Marcar Como Tomado");
+        funcionalidades.add("Adicionar Medicamentos");
         funcionalidades.add("Receber lembretes de medicamentos");
-        funcionalidades.add("Buscar clínicas e hospitais próximos");
 
         // Definindo a lista na ListView
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, funcionalidades);
